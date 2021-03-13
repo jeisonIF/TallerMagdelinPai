@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-button routerLink="/home">
+        Ir a Inicio
+      </ion-button>
+    </ion-buttons>
+    <ion-title>operaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Ingrese numero 1:</ion-label>
+    <ion-input [(ngModel)]="n1"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ingrese signo de operacion:</ion-label>
+    <ion-input [(ngModel)]="operaciones"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ingrese numero 2:</ion-label>
+    <ion-input [(ngModel)]="n2"></ion-input>
+  </ion-item>
+  <ion-button color="success" (click)="operacioN()">
+    Calcular
+  </ion-button>
+    <ion-item>
+      <ion-label>
+         Operacion {{this.op}}
+      </ion-label>
+
+      <ion-label>
+
+        {{this.n1}} {{this.operaciones}} {{this.n2}} = {{this.resul}}
+        
+      </ion-label>
+    </ion-item>
+  
+</ion-content>

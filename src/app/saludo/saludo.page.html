@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>saludo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label >Ingresa tu nombre:</ion-label>
+    <ion-input [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+  <ion-button color="success" (click)="saludo()">
+    Saludar
+    <!-- <ion-icon name="hand-left-sharp"></ion-icon> -->
+    <ion-icon name="paw-outline"></ion-icon>
+  </ion-button>
+  <ion-button routerLink="/home">
+    Inicio
+  </ion-button>
+</ion-content>
